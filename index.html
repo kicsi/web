@@ -10,11 +10,13 @@
             margin: 0;
             padding: 0;
             color: #333;
-        }
-        .header {
             background-image: url('hatter.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ez biztosítja, hogy a háttér kép helyben maradjon görgetés közben is */
+        }
+        .header {
             height: 300px;
             display: flex;
             justify-content: center;
@@ -28,6 +30,8 @@
         }
         .container {
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Ez biztosítja, hogy a szöveg jól olvasható legyen a háttér előtt */
+            border-radius: 8px;
         }
         .contact-info {
             background-color: #f4f4f4;
